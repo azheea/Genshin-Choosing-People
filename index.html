@@ -1,0 +1,37 @@
+<head>
+    <meta charset="UTF-8">
+    <title>原神抽人</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div align="center">
+        <img id="characterImage" src="img/kazuha-selected.png" height="12%">
+    </div>
+    <br>
+    <div align="center">
+        <img id="backgroundImage" src="img/leaves-in-the-wind.png" height="70%">
+    </div>
+    <br>
+    <div style="position: relative;left: 800px;">
+        <!-- 字符显示在图片正中间重合 -->
+        <!-- 祈愿一次应该在祈愿十次的水平左边 -->
+        <img id="c10" src="img/wish-button.png" height="7.5%" onclick="playVideo()">
+        <span id="c10text" style="position: absolute; top: 18; left: 300;">祈愿10次</span>
+        <img id="c1" src="img/wish-button.png" height="7.5%" onclick="playVideo()">
+        <span id="c1text" style="position: absolute; top: 18; left: 80;">祈愿1次</span>
+    </div>
+
+    <!-- 抽卡动画 -->
+    <div id="videoContainer">
+        <video id="video" style="display: none;">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- 抽出卡的背景 -->
+    <div align="center">
+        <img id="gachabg" src="img/gotitem.webp" height="30%" hidden="true">
+    </div>
+    <!-- wtm不想写动画了:< -->
+    <script src="script.js"></script>
+</body>
